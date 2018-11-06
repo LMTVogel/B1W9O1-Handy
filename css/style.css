@@ -16,6 +16,7 @@
 
 body {
 	font-family: 'Archivo', sans-serif;
+	overflow-x: hidden;
 }
 
 * {
@@ -82,25 +83,51 @@ nav > ul > li > ul > li > a:hover {
 	background-color: #ffe718;
 }
 
+section {
+	height: 330px;
+
+}
 
 .banner {
 	display: inline-block;
-}
-
-.banner > img {
+	width: 300px;
+	height: 220px;
 	margin: 10px;
-	margin-top: 50px;
-	margin-bottom: 50px;
+	position: relative;
+	top: 20px;
+	left: 20px;
 }
 
-.ribbontext {
+.bannerHover {
 	position: absolute;
-	left: 450px;
+	background-color: rgba(34,41,49,0.8);
+	width: 300px;
+	height: 220px;	
+	display: none;
+}
+
+.bannerHover > h2 {
+	color: white;
+	font-size: 32px;
+	font-weight: 600;
+	position: relative;
+	text-align: center;
+	top: 87px;
+}
+
+.banner:hover .bannerHover {
+
+	display: block;
 }
 
 .ribbon {
 	background-color: #ffe718;
 	height: 160px;
+}
+
+.ribbontext {
+	position: absolute;
+	left: 450px;
 }
 
 div > h1, p {
@@ -133,13 +160,14 @@ button > a {
 }
 
 .ribbonbutton > button {
+	margin-top: 10px;
 	background-color: white;
 	padding: 12px 50px;
 	border: none;
 }
 
 .ribbonbutton > button:hover {
-	background-color: grey;
+	background-color: #222931;
 }
 
 button:hover > a {
@@ -152,6 +180,119 @@ button:hover > a {
 	background-repeat: no-repeat;
 	width: 100%;
 	height: 300px;
+	top: 100px;
+	position: relative;
+	
+}
+
+.yellowbuttons {
+
+	position: relative;
+	top: 35px;
+}
+
+.yellowbuttons > a { 
+	
+	background-color: #ffe718;
+	width: 300px;
+	height: 100px;
+	text-decoration: none;
+	position: relative;
+	float: left;
+	margin: 15px;
+	color: #222931;
+}
+
+.yellowtext {
+	position: relative;
+	left: 110px;
+	top: 30px;
+}
+
+.yellowtext > h2 {
+	font-size: 22px;
+	font-weight: 600;
+}
+
+.yellowtext > p {
+	margin: 0;
+	padding: 0;
+	font-size: 14px;
+	font-weight: 600;
+}
+
+.yellowbuttons > a > i {
 	position: absolute;
-	top: 1150px;
+	color: #222931;
+	left: 35px;
+	top: 26px;
+}
+
+.yellowbuttons:hover > a > .yellowtext, .yellowbuttons:hover > a > i {
+	color: white;
+}
+
+.yellowbuttons:hover > a {
+	background-color: #222931;
+}
+
+ hr {
+ 	position: relative;
+ 	left: 1.8%;
+ 	width: 95%;
+ 	top: 80px;
+ }
+
+.footertext {
+	position: relative;
+	top: 130px;
+	width: 429px;
+}
+
+.footertext > h2 {
+	color: #222931;
+	font-size: 24px;
+	font-weight: 600;
+}
+
+.footertext > p {
+	margin: 0;
+	padding: 0;
+	margin-top: 30px;
+	color: #5f656d;
+	font-size: 12px;
+	line-height: 18px;
+	font-weight: 400;
+}
+
+.footerinfo {
+	position: absolute;
+	right: 200px; 
+	top: 128px;
+}
+
+footer {
+	position: relative;
+	width: 1000px;
+	margin: 0 auto;
+}
+
+.footerinfo > div > i {
+	color: #aeb6be;
+}
+
+.footerinfo > div > p {
+	margin: 20px;
+	padding: 0px;
+}
+
+.bottomfooter {
+	background-color: #222931;
+	height: 50px;
+	position: relative;
+	top: 160px;
+}
+
+.bottomfooter > h2 {
+	color: white;
 }
